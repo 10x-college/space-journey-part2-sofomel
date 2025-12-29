@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal X-Omega | Intergalactic Spaceport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="warp-overlay"></div>
+		<div class="header-content"> 
+			<h1>TERMINAL X-OMEGA.</h1>
+			<p>GATEWAY TO THE OUTER RIM SECTOR.</p>
+			<div class="status-bar">
+				<span>SYSTEM: ONLINE</span>
+				<span class="blink">TRAFFIC: HEAVY</span>
+				<span>TEMP: -270°C</span>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="destinations">
+			<h2>POPULAR FLIGHT PATHS.</h2>
+			<div class="grid-wrapper">
+				<article>
+					<figure>
+						<img src="assets/dest_kepler.jpeg" alt="Destination Name"> 
+						<figcaption>
+						<h3>Kepler-186f</h3>
+						<p>Short description here.</p>
+						</figcaption>  
+					</figure>
+					<div class="card-details">
+						<span>Class: Habitable</span>
+						<button>BOOK PASSAGE</button>
+					</div>
+				</article>
+				<article>
+					<figure>
+						<img src="assets/dest_titan.jpeg" alt="Titan Station"> 
+						<figcaption>
+						<h3>Titan Station</h3>
+						<p>Short description here.</p>
+						</figcaption>  
+					</figure>
+					<div class="card-details">
+						<span>Class: Industrial</span>
+						<button>BOOK PASSAGE</button>
+					</div>
+				</article>
+				<article>
+					<figure>
+						<img src="assets/dest_nebula.jpeg" alt="Nebula Resort"> 
+						<figcaption>
+						<h3>Nebula Resort</h3>
+						<p>Short description here.</p>
+						</figcaption>  
+					</figure>
+					<div class="card-details">
+						<span>Class: Luxury</span>
+						<button>BOOK PASSAGE</button>
+					</div>
+				</article>
+				<article>
+					<figure>
+						<img src="assets/dest_blackhole.jpeg" alt="Event Horizon"> 
+						<figcaption>
+						<h3>Event Horizon</h3>
+						<p>Short description here.</p>
+						</figcaption>  
+					</figure>
+					<div class="card-details">
+						<span>Class: Extreme</span>
+						<button>BOOK PASSAGE</button>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section id="schedule">
+			<div class="hologram-overlay">
+				<h2>LIVE DEPARTURE BOARD.</h2>
+				<table>
+					<caption>REAL-TIME WARP GATE STATUS</caption>
+					<thead>
+					<tr>
+						<th>Flight</th>
+						<th>Destination</th>
+						<th>Gate</th>
+						<th>Time</th>
+						<th>Status</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>AR-4</td>
+						<td>Mumbai </td>
+						<td>D1</td>
+						<td>09:30</td>
+						<td class="status-go">Boarding</td>
+					</tr>
+					<tr>
+						<td>KL-8</td>
+						<td>Cairo </td>
+						<td>C2</td>
+						<td>10:45</td>
+						<td class="status-wait">Boarding</td>
+					</tr>
+					<tr>
+						<td>KR-7</td>
+						<td>Tromso</td>
+						<td>B3</td>
+						<td>11:55</td>
+						<td class="status-delay">Boarding</td>
+					</tr>
+					<tr>
+						<td>TY-5</td>
+						<td>mAKASSAR</td>
+						<td>G4</td>
+						<td>12:57</td>
+						<td class="status-stop">Boarding</td>
+					</tr>
+					</tbody>
+					<tfoot>
+					<tr>
+						<td colspan="5">SCANNING FOR INCOMING VESSELS...</td>
+					</tr>
+					</tfoot>
+				</table>
+			</div>
+		</section>
+		<section id="booking">
+			<div class="kiosk-interface">
+				<h2>SELF-SERVICE TERMINAL</h2>
+				<form action="#" method="POST">
+					<fieldset>
+						<legend>IDENTITY VERIFICATION</legend>
+						<label for="full-designation">Full Designation</label>
+						<input type="text" id="full-designation" name="full-designation" placeholder="Full Designation">
+						<label for="id-code">ID Code</label>
+						<input type="text" id="id-code" name="id-code"  placeholder="ID Code">
+					</fieldset>
+					<fieldset>
+						<legend>FLIGHT PARAMETERS</legend>
+						<label for="planets">Choose a planet:</label>
+						<input list="planet" id="planets" name="planets" placeholder="planets">
+						<datalist id="planet">
+						  <option value="Kepler-186f">
+						  <option value="Titan Station">
+						  <option value="Nebula Resort">
+						  <option value="Event Horizon">
+						</datalist>
+						<label for="cabin-class">cabin class:</label>
+						<select name="cabin-class" id="cabin-class">
+						  <option value="Economy">Stasis Pod</option>
+						  <option value="Business">Quarters</option>
+						  <option value="First">Zero-G Suite</option>
+						</select> 
+					</fieldset>
+					<button type="submit">AUTHORIZE CREDIT TRANSFER</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>TERMINAL X-OMEGA // OPERATED BY GALACTIC FEDERATION // SAFETY NOT GUARANTEED</p>
+	</footer>
+</body>
+</html>
+
